@@ -298,7 +298,7 @@ passport.use(
           // plugin integrations.
           user = await UsersService.findOrCreateByIDToken(
             get(jwt, JWT_USER_ID_CLAIM),
-            { token, jwt }
+            { token, jwt, req }
           );
         }
 

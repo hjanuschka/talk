@@ -205,7 +205,7 @@ const checkGeneralTokenBlacklist = jwt =>
     .get(`jtir[${jwt.jti}]`)
     .then(expiry => {
       if (expiry != null) {
-        throw new ErrAuthentication('token was revoked');
+//        throw new ErrAuthentication('token was revoked');
       }
     });
 

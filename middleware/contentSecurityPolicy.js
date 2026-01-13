@@ -32,6 +32,7 @@ module.exports = helmet.contentSecurityPolicy({
       'https://maxcdn.bootstrapcdn.com', // for bootstrap css
       'https://fonts.googleapis.com', // for google fonts
       'https://code.getmdl.io', // for mdl css
+      'https://cdn.jsdelivr.net'
       staticSrc, // for any static files loaded from a cdn
       nonceSrc,
     ],
